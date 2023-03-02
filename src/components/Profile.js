@@ -14,3 +14,5 @@ function ProfileForm(props) {
         }
     }
 }
+
+export default Profile;

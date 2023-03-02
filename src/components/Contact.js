@@ -9,4 +9,27 @@ function Contact(props) {
     });
 
     console.log(props.contact);
+
+    const submitUpdate = (value)=> {
+        props.editContactItem(edit.id, value);
+        setEdit({ id: null, value: '', eagerness: ''});
+    };
+
+    if(edit.id) {
+        return <Profile edit={edit} onSubmit = {submitUpdate}/>
+    }
+
+    return props.contact.map((item,i)=> (
+        <div>
+            className={
+                item.isComplete
+                ? `contact-row complete ${item.eagerness}`
+                : `contact-row ${item.eagerness}`
+            }
+            key ={i}
+            
+        </div>
+    ))
 }
+
+export default Contact;
