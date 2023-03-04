@@ -1,6 +1,5 @@
 import React, {useState} from 'react';
 import Projects from '../Projects';
-// import Contact from '../Contact';
 
 function Portfolio(){
 
