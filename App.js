@@ -1,10 +1,21 @@
-import './'
-
+import React from "react";
 
 function App(){
-    return (
-        <div className = "projects">
-            <Project/>
-        </div>
-    );
+  const [pages] = useState([
+    {
+        name: "name"
+    },
+    {
+        name: "portfolio"
+    },
+    {
+        name: "contact"
+    },
+    {
+        name: "projects"
+    }
+  ]);
+ 
 }
+
+export default App;

@@ -1,9 +1,10 @@
 import React, {useState} from 'react';
 import Projects from '../Projects';
-import Contact from '../Contact';
+// import Contact from '../Contact';
 
 function Portfolio(){
-    const [portfolio] = useState([
+
+    const [projects] = useState([
         {
             name: 'Ryan Carless',
             description: 'How to Build Websites' ,
@@ -35,14 +36,15 @@ function Portfolio(){
 
     return (
         <div>
-            <div className= "flex">
-                <portfolio.map(portfolio)=> (
-                    <Portfolio
-                    porfolio={portfolio}
-                    key={"portfolio"}
-                    />))
-            </div>
+          <div className="flex-row">
+            {projects.map((projects, idx) => (
+              <Projects
+                projects={projects}
+                key={"projects" + idx}
+              />
+            ))}
+          </div>
         </div>
-    )
+      );
                 }
                 export default Portfolio;
