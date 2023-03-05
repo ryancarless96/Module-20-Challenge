@@ -22,6 +22,7 @@ function Contact(){
 
     const handleChange = (e) => {
         if (e.target.name === 'email') {
+            const isValid = validateEmail(e.target.value);
             if(!isValid) {
                 setErrorMessage("Your email doesn't work");
             } else {
