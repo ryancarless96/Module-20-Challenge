@@ -28,6 +28,11 @@ function Contact(){
             } else {
                 setErrorMessage('');
             }
+        } 
+        if(!e.target.value.length) {
+          setErrorMessage(`${e.target.name} is required.`);
+        } else {
+          setErrorMessage('');
         }
         if (!errorMessage) {
             setFormState({ ...formState, [e.target.name]: e.target.value });
