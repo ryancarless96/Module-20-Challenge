@@ -1,6 +1,6 @@
 import React, {useState} from 'react';
 
-import{validateEmail} from "../../utils/main";
+import{validateEmail} from "../../utils/helpers";
 
 
 function Contact(){

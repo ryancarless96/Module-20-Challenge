@@ -5,5 +5,5 @@ import App from './App';
 const myFirstElement = <h1>Ryan Carless's Coding Portfolio</h1>
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
-root.render(myFirstElement);
+root.render(<App></App>);
 
