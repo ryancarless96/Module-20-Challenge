@@ -1,4 +1,3 @@
-
 import './App.css';
 import React, { useState } from "react";
 import AboutMe from "./components/AboutMe/me";
@@ -26,11 +25,18 @@ function App() {
   }
   return (
     <div className="App">
-      <Header setCurrentPage= {setCurrentPage}></Header>
-     {
+      <Header setCurrentPage={setCurrentPage}></Header>
+      {
         renderPage()
-     }
-       <Footer></Footer>
+      }
+      <Footer>
+        {/* <li>
+          <a href="https://github.com/ryancarless96"> GitHub</a>
+        </li>
+        <li>
+          <a href="https://www.linkedin.com/in/ryan-carless-0a5a98165/">LinkedIn</a>
+        </li> */}
+      </Footer>
     </div>
   );
 }

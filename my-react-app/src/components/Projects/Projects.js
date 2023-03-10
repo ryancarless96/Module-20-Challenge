@@ -3,7 +3,7 @@ import React from 'react';
 
 function Projects({ projects }) {
 
-  const { name, github, link, description } = projects;
+  const { name, github, description } = projects;
 
   return (
     <div className="projects" key={name}>

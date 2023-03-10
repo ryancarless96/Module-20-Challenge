@@ -1,13 +1,14 @@
 import React from 'react';
+import PageContent from "../Page Content";
 import AboutMe from '../AboutMe';
 import Contact from '../Contact';
 import Portfolio from '../Portfolio';
-import Resume from '../Resume'
+import Resume from '../Resume';
 import { capitalizeFirstLetter } from '../../utils/helpers';
 
 function Page({ currentPage }) {
 
-    const renderPAge = () => {
+    const renderPage = () => {
         switch (currentPage.name) {
             case 'aboutMe':
                 return < AboutMe />;
@@ -25,6 +26,7 @@ function Page({ currentPage }) {
     return (
         <section>
             <h2>{capitalizeFirstLetter(currentPage.name)}</h2>
+            <PageContent> {renderPage()}</PageContent>
         </section>
     );
 }
