@@ -5,7 +5,7 @@ function Resume() {
         <section className="my-5">
             <div className="my-2">
                 <p>
-                    Links to my <a href="https://www.linkedin.com/">Resume!</a>
+                    Links to my <a href="https://www.linkedin.com/in/ryan-carless-0a5a98165/">Resume!</a>
                 </p>
                 <h3> Front-End </h3>
                 <ul className="skills">
