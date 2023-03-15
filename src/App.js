@@ -30,12 +30,7 @@ function App() {
         renderPage()
       }
       <Footer>
-        {/* <li>
-          <a href="https://github.com/ryancarless96"> GitHub</a>
-        </li>
-        <li>
-          <a href="https://www.linkedin.com/in/ryan-carless-0a5a98165/">LinkedIn</a>
-        </li> */}
+
       </Footer>
     </div>
   );
