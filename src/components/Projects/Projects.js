@@ -20,7 +20,7 @@ function Projects({ projects }) {
           </a>
         </h3>
         <p>{description}</p>
-      </div>y
+      </div>
     </div>
   );
 }
