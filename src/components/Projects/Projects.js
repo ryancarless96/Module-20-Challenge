@@ -3,12 +3,12 @@ import React from 'react';
 
 function Projects({ projects }) {
 
-  const { name, github, description } = projects;
+  const { name, github, description, link, image} = projects;
 
   return (
     <div className="projects" key={name}>
       <img
-       
+        src= {image}
         // alt={removeHyphensAndCapitalize(name)}
         className="projects-bg"
       />

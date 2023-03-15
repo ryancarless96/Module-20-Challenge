@@ -1,5 +1,6 @@
 import React from 'react';
 import coverImage from "../../images/cover-Page/cover-image.jpg";
+import './header.css';
 
 
 function Header(props) {
